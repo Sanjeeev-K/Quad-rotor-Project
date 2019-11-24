@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from src.rrt.rrt_star import RRTStar
 from src.search_space.search_space import SearchSpace
 from src.utilities.plotting import Plot
+import test2
 
 X_dimensions = np.array([(0, 100), (0, 100), (0, 100)])  # dimensions of Search Space
 # # obstacles
@@ -16,10 +17,13 @@ X_dimensions = np.array([(0, 100), (0, 100), (0, 100)])  # dimensions of Search 
 # 55, 55,
 # (60, 20, 20, 55, 55, 25)
 
-Obstacles = np.array(
-    [(20, 20, 20, 25, 60, 25),(20, 55, 20, 60, 60, 25),(20, 20, 20,60, 25, 25),(55, 25, 20, 60, 60, 25)])
+# Obstacles = np.array(
+    # [(20, 20, 20, 25, 60, 25),(20, 55, 20, 60, 60, 25),(20, 20, 20,60, 25, 25),(55, 25, 20, 60, 60, 25)])
 
-size_factor = 5
+goallist = [(10, 20, 40), (30, 40, 40)]
+Obstacles = test2.genSerObs(goallist)
+Obstacles = np.array(Obstacles)
+size_factor = 0
 
 
 
@@ -44,7 +48,9 @@ x_init = (0, 0, 0)  # starting location
 x_goal= (50, 50, 50)  # goal location
 x_goal2 =(100,100,100)
 
-goal_points = np.array([x_init,(60,60,60),(50,50,50),(75,75,75),(100,100,100)])
+goal_points = np.array([x_init,(10, 20, 40),(30, 40, 40),(100,100,100)])
+
+# (60,60,60),(50,50,50),(75,75,75),
 
 Q = np.array([(8, 4)])  # length of tree edges
 r = 1  # length of smallest edge to check for intersection with obstacles
