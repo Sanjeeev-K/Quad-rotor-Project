@@ -23,6 +23,7 @@ X_dimensions = np.array([(0, 100), (0, 100), (0, 100)])  # dimensions of Search 
 goallist = [(10, 20, 40), (30, 40, 40)]
 Obstacles = test2.genSerObs(goallist)
 Obstacles = np.array(Obstacles)
+
 size_factor = 0
 
 
