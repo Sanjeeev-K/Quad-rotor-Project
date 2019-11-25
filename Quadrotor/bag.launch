@@ -1,0 +1,9 @@
+<launch>
+<node name="record" pkg="rosbag" type="record" args="-o /home/bear/Quadrotor/la_l_x.bag
+                                                        /command/pose
+                                                        /ground_truth/state
+                                                        /ground_truth_to_tf/euler
+                                                        /ground_truth_to_tf/pose
+                                                        /tf
+                                                        /tf_static"/>
+</launch>
