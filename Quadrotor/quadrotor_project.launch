@@ -16,4 +16,5 @@
   </include>
 
   <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor_project.launch" />
+ <include file="bag.launch" />
 </launch>

@@ -1,3 +1,0 @@
-<launch>
-	<node pkg="hw_4" name="forward_kinematics_server" type="forward_kinematics" output="screen"/>
-</launch>
