@@ -1,5 +1,5 @@
 <launch>
-<node name="record" pkg="rosbag" type="record" args="-o /home/bear/Quad-rotor-Project/Quadrotor/la_l_x.bag
+<node name="record" pkg="rosbag" type="record" args="-o /home/bear/Quad-rotor-Project/Quadrotor/la_l_z.bag
                                                         /command/pose
                                                         /ground_truth/state
                                                         /ground_truth_to_tf/euler
