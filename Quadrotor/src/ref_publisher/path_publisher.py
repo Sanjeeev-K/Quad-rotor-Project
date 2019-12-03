@@ -8,10 +8,22 @@ import numpy as np
 
 class Path_Publisher:
 
-    def __init__(self):
+    def __init__(self, world_file_name):
         self.pub = rospy.Publisher('command/pose', PoseStamped, queue_size=10)
         self.sub = rospy.Subscriber('/ground_truth_to_tf/pose', PoseStamped, self.publish_reference)
-        self.path = [[0,0,0.2],[1.5,0,0.8],[2.5,3.0,0.8],[4.5,6.0,0.8]]
+        self.world_file_name = world_file_name
+        if self.world_file_name == 'world_test.world':
+            self.path = [[0,0,0.2],[1.5,0,0.8],[2.5,3.0,0.8],[4.5,6.0,0.8]]
+        elif self.world_file_name == 'world_demo_corridor.world':
+            self.path = [[0,0,0.2],[4.0,-0.3,1.1],[6.0,0.2,1],[8.0,1.8,0.9],[5.2,4.5,1.3],[1.3,4.2,1.0],[0.2,5.8,1.2],[1.2,8.8,1.1],[4.0,9.1,0.7],[6.0,8.6,0.5],[8.0,8.5,0.2]]
+        elif self.world_file_name == 'world_demo_xy.world':
+            self.path = [[0,0,0.2],[2.0,1.5,0.5],[2.5,3.0,0.8],[4.0,4.5,0.7],[4.5,6.0,0.8],[3.0,7.5,0.9],[2.5,9.0,0.8],[4.0,10.5,0.9],[4.5,12.0,0.8],[4.5,13.0,0.5],[4.5,14.0,0.2]]
+        elif self.world_file_name == 'world_demo_xyz.world':
+            self.path = [[0,0,0.2],[2.0,1.5,0.8],[2.5,3.0,1.3],[4.0,4.5,0.7], [4.5,6.0,1.3], [3.0,7.5,0.9],[2.5,9.0,1.3],[4.0,10.5,0.9],[4.5,12.0,1.3],[4.5,13.0,0.5],[4.5,14.0,0.2]]
+        else:
+            rospy.loginfo('The world file name doe not match')
+            rospy.signal_shutdown('Quit')
+
         self.index = 0
 
     def publish_reference(self, msg):
@@ -42,5 +54,6 @@ class Path_Publisher:
 
 if __name__ == '__main__':
     rospy.init_node('pose_publisher', anonymous=True)
-    path_publisher = Path_Publisher()
+    world_file_name = rospy.get_param('world_file_name')
+    path_publisher = Path_Publisher(world_file_name)
     rospy.spin()

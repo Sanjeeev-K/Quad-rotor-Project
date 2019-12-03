@@ -1,0 +1,5 @@
+<launch>
+  <arg name ="world_file_name" default="world_test.world"/>
+  <rosparam param="world_file_name" subst_value="True">$(arg world_file_name)</rosparam>
+	<node pkg="ref_publisher" name="pose_publisher" type="path_publisher.py" output="screen"/>
+</launch>

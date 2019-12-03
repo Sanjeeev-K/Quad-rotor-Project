@@ -47,15 +47,15 @@ if __name__ == '__main__':
                     if keyboard_input == '8':
                         pose.pose.position.z = pose.pose.position.z + 1
                     elif  keyboard_input == '2':
-                        pose.pose.position.z = pose.pose.position.z  -  1
+                        pose.pose.position.z = pose.pose.position.z  -  0.1
                     elif keyboard_input == '4':
-                        pose.pose.position.y = pose.pose.position.y  -  1
+                        pose.pose.position.y = pose.pose.position.y  -  0.1
                     elif keyboard_input == '6':
-                        pose.pose.position.y = pose.pose.position.y  +  1
+                        pose.pose.position.y = pose.pose.position.y  +  0.1
                     elif keyboard_input == '+':
                         pose.pose.position.x = pose.pose.position.x + 1
                     elif keyboard_input == '-':
-                        pose.pose.position.x = pose.pose.position.x - 1
+                        pose.pose.position.x = pose.pose.position.x - 0.1
                     elif keyboard_input == '5':
                         yaw = yaw + 1.0
                     else:
