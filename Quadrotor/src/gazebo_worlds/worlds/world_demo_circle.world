@@ -1750,7 +1750,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>1 0.2 1.5</size>
+              <size>0.2 1.0 1.5</size>
             </box>
           </geometry>
           <material>
@@ -1776,7 +1776,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.0 0.2 1.5</size>
+              <size>0.2 1.0 1.5</size>
             </box>
           </geometry>
           <surface>
@@ -1828,7 +1828,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>1.0 9.0 0.75 0 -0 -1.57102</pose>
+      <pose frame=''>1.0 9.0 0.75 0 -0 0</pose>
     </model>
     <model name='wall5_3'>
       <link name='link'>
@@ -1852,7 +1852,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>2.0 0.2 0.2</size>
+              <size>0.2 2.0 0.2</size>
             </box>
           </geometry>
           <material>
@@ -1878,7 +1878,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.0 0.2 0.2</size>
+              <size>0.2 2.0 0.2</size>
             </box>
           </geometry>
           <surface>
@@ -1930,7 +1930,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>1.0 10.5 0.1 0 -0 -1.57102</pose>
+      <pose frame=''>1.0 10.5 0.1 0 -0 0</pose>
     </model>
     <model name='wall5_4'>
       <link name='link'>
@@ -1954,7 +1954,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>2.0 0.2 0.2</size>
+              <size>0.2 2.0 0.2</size>
             </box>
           </geometry>
           <material>
@@ -1980,7 +1980,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.0 0.2 0.2</size>
+              <size>0.2 2.0 0.2</size>
             </box>
           </geometry>
           <surface>
@@ -2032,7 +2032,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>1.0 10.5 1.4 0 -0 -1.57102</pose>
+      <pose frame=''>1.0 10.5 1.4 0 -0 0</pose>
     </model>
     <model name='wall5_2'>
       <link name='link'>
@@ -2056,7 +2056,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>1 0.2 1.5</size>
+              <size>0.2 1.0 1.5</size>
             </box>
           </geometry>
           <material>
@@ -2082,7 +2082,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.0 0.2 1.5</size>
+              <size>0.2 1.0 1.5</size>
             </box>
           </geometry>
           <surface>
@@ -2134,7 +2134,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>1.0 12.0 0.75 0 -0 -1.57102</pose>
+      <pose frame=''>1.0 12.0 0.75 0 -0 0</pose>
     </model>
 
     <state world_name='default'>
@@ -2314,40 +2314,40 @@
 
       <!-- wall5 -->
       <model name='wall5_3'>
-        <pose frame=''>1.0 10.5 0.1 0 -0 -1.57102</pose>
+        <pose frame=''>1.0 10.5 0.1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.0 10.5 0.1 0 -0 -1.57102</pose>
+          <pose frame=''>1.0 10.5 0.1 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wall5_4'>
-        <pose frame=''>1.0 10.5 1.4 0 -0 -1.57102</pose>
+        <pose frame=''>1.0 10.5 1.4 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.0 10.5 1.4 0 -0 -1.57102</pose>
+          <pose frame=''>1.0 10.5 1.4 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wall5_2'>
-        <pose frame=''>1.0 12.0 0.75 0 -0 -1.57102</pose>
+        <pose frame=''>1.0 12.0 0.75 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.0 12.0 0.75 0 -0 -1.57102</pose>
+          <pose frame=''>1.0 12.0 0.75 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wall5_1'>
-        <pose frame=''>1.0 9.0 0.75 0 -0 -1.57102</pose>
+        <pose frame=''>1.0 9.0 0.75 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.0 9.0 0.75 0 -0 -1.57102</pose>
+          <pose frame=''>1.0 9.0 0.75 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
