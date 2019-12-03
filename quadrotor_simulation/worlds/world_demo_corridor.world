@@ -313,7 +313,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>12.0 0.2 2.0</size>
+              <size>0.2 12.0 2.0</size>
             </box>
           </geometry>
           <material>
@@ -339,7 +339,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>12.0 0.2 2.0</size>
+              <size>0.2 12.0 2.0</size>
             </box>
           </geometry>
           <surface>
@@ -391,7 +391,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>-2.0 4.0 1.0 0 -0 -1.57102</pose>
+      <pose frame=''>-2.0 4.0 1.0 0 -0 0</pose>
     </model>
 
     <!-- wall4 -->
@@ -417,7 +417,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>12.0 0.2 2.0</size>
+              <size>0.2 12.0 2.0</size>
             </box>
           </geometry>
           <material>
@@ -443,7 +443,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
-              <size>12.0 0.2 2.0</size>
+              <size>0.2 12.0 2.0</size>
             </box>
           </geometry>
           <surface>
@@ -495,7 +495,7 @@
       </link>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>10.0 4.0 1.0 0 -0 -1.57102</pose>
+      <pose frame=''>10.0 4.0 1.0 0 -0 0</pose>
     </model>
 
         <!-- wall5 -->
@@ -741,10 +741,10 @@
       <!-- wall3 -->
     
       <model name='wall3'>
-        <pose frame=''>-2.0 4.0 1.0 0 -0 -1.57102</pose>
+        <pose frame=''>-2.0 4.0 1.0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>-2.0 4.0 1.0 0 -0 -1.57102</pose>
+          <pose frame=''>-2.0 4.0 1.0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -754,10 +754,10 @@
       <!-- wall4 -->
       
       <model name='wall4'>
-        <pose frame=''>10.0 4.0 1.0 0 -0 -1.57102</pose>
+        <pose frame=''>10.0 4.0 1.0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.0 4.0 1.0 0 -0 -1.57102</pose>
+          <pose frame=''>10.0 4.0 1.0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
