@@ -200,3 +200,5 @@ include_directories(
 
 add_executable(pose_pub_test src/pose_pub_test.cpp)
 target_link_libraries(pose_pub_test ${catkin_LIBRARIES})
+add_executable(pose_pub src/pose_pub.cpp)
+target_link_libraries(pose_pub ${catkin_LIBRARIES})

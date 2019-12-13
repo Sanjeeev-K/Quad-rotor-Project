@@ -33,5 +33,5 @@ Simulation part.
 
 ## How to tun:
 
-1. 'roslaunch quadrotor_demo spawn_single_quadrotor.launch'
-2. 'rosrun quadrotor_demo pose_pub_test'
+1. `roslaunch quadrotor_demo spawn_single_quadrotor.launch`
+2. `rosrun quadrotor_demo pose_pub`
