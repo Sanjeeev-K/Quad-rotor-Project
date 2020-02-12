@@ -1,5 +1,8 @@
 # Quad-rotor-Project
 RBE501 Robot Dynamics Project - Path Planning module
+
+In this module, we make use the repository from github.com/motion-planning as a base. On top of that, we add functionalities for multi-point navigation and more robust obstacle avoidance for a quad-rotor.
+
 Instructions for use:
 
 1. Download/Gitclone the directory from here : https://github.com/motion-planning/rrt-algorithms into a single folder, say rrt-algorithms.
