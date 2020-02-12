@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Start Gazebo with wg world running in (max) realtime -->
+  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch"/> -->
+  <!-- <include file="$(find hector_gazebo_worlds)/launch/rolling_landscape_120m.launch"/> -->
+  <include file="$(find hector_gazebo_worlds)/launch/testworld.launch"/>
+    <!-- <include file="$(find hector_gazebo_worlds)/launch/testworld.launch"/> -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro $(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_downcam.gazebo.xacro" />
+  <!-- Spawn simulated quadrotor uav -->
+  <group ns="drone1">
+    <!-- <param name="tf_prefix" value="drone1" /> -->
+    <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch" >
+      <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_downcam.gazebo.xacro"/>
+      <arg name="tf_prefix" value="/drone1" />
+      <arg name="x" value="0"/>
+      <arg name="y" value="0"/>
+      <arg name="z" value="0.1"/>
+      <arg name="controllers" value=" controller/attitude controller/velocity controller/position "/>
+      <arg name="name"  value="drone1" />
+    </include>
+  </group>
+
+  <node pkg="rosservice" type="rosservice" name="global_loc1" args="call --wait /drone1/enable_motors '{enable: true}'" />
+
+
+<!--   <include file="$(find hector_quadrotor_teleop)/launch/xbox_controller.launch" >
+    <arg name="control_mode" value="position"/>
+  </include> -->
+</launch>

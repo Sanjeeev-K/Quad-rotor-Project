@@ -1,0 +1,35 @@
+Kp_h: 6
+Kp_v: 70
+Kv_h: 5
+Kv_v: 20
+KR_h: 10
+KR_v: 2
+Kw_h: 0.1
+Kw_v: 0.5
+
+connection_timeout: 10.0
+action_timeout: 30.0
+state_timeout: 0.5
+command_timeout: 0.5
+
+dist_tolerance: 0.1
+yaw_tolerance: 0.35
+time_in_tolerance: 1.0
+
+landing_height: 0.1
+takeoff_height: 0.1
+
+estop_deceleration: 1.0
+
+wrench_limits:
+    force: # N
+        z:
+            min: 0.0
+            max: 30.0
+    torque: # Nm
+        x:
+            max: 10.0
+        y:
+            max: 10.0
+        z:
+            max: 1.0

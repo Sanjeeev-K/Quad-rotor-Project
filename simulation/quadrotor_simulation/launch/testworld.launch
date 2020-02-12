@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find hector_gazebo_worlds)/launch/start.launch">
+   <!-- <arg name="world" value="$(find quadrotor_demo)/include/two_cubes.world"/>  -->
+
+   <arg name="world" value="$(find hector_gazebo_worlds)/worlds/world_test.world"/> 
+  </include>
+
+</launch>
